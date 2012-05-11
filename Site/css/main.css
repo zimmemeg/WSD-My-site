@@ -1,0 +1,235 @@
+body{
+	background-color: #c14869;
+	font-family: 'trebuchet ms', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	width: 800px;
+	margin: 0 auto;
+	background-image:url('../images/bg_image.png');
+	background-repeat: repeat-x;
+}
+
+#header{
+	height: 100px;
+	width: 800px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #000;
+}
+
+h1, h2, h3{
+	font-family: Audiowide;
+}
+
+h2{
+	color:#52bc39;
+	font-weight:normal;
+}
+
+a{
+	color: #beb44f;
+	text-decoration: none;
+}
+
+a:link{
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+}
+
+a:hover{
+	background-color: black;
+	border: none;
+	color: red;
+}
+
+/*-------------This is CSS for the Navigation-------------*/
+
+ul li{
+	display: inline;
+	width: 762px;
+}
+
+#nav{
+	display: inline;
+	font-size: 18px;
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav li{
+	margin: 0;
+	padding: 0;
+}
+
+#nav li a{
+	display: inline;
+	padding: 0 40px 0 40px;
+	text-transform: lowercase;
+}
+
+#nav li a:hover{
+	background-color: white;
+	color: #000;
+}
+
+/*-----------This is CSS for the Main Content------------*/
+
+#main_content{
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px 5px 10px 5px;
+	height:311px;
+	overflow: auto;
+}
+
+#info{
+	margin: 0;
+	width: 280px;
+	float: left;
+}
+
+.justice{
+	float:right;
+}
+/*-----------This is CSS for the Fun Facts & Table & Form-----------*/
+
+#fun_facts{
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	width: 380px;
+	padding: 5px;
+	margin: 5px;
+	float: left;
+	overflow: auto;
+}
+
+#table{
+	background-color:#eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	width: 380px;
+	height: 239px;
+	padding: 5px;
+	margin: 5px;
+	float: right;
+	overflow: auto;
+}
+
+.clearfix{
+	clear: both;
+}
+
+#form{
+	background-color:#eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	width: 780px;
+	padding: 5px;
+	margin: 5px 5px 25px 5px;
+	overflow: auto;
+}
+
+/*----------This is the CSS for the Main info for the Tech Specs-------*/
+
+#tech_info{
+	float:right;
+	width: 424px;
+	font-size: 13px;
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin-bottom: 10px;
+	overflow: auto;
+}
+
+#characteristics{
+	font-size: 13px;
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px 10px 10px 0;
+	float: left;
+	overflow: auto;
+}
+
+#armaments{
+	font-size: 13px;
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px 10px 10px 0;
+	float: left;
+	overflow: auto;
+}
+
+.ij3{
+	float:left;
+	border: 2px solid #000;
+	border-radius: 10px;
+	margin: 0 5px 10px 0;
+}
+
+#tech_form{
+	font-size: 13px;
+	width:280px;
+	height:153px;
+	background-color: #eef3fd;
+	-moz-box-shadow: 3px 3px 8px #000;
+	-webkit-box-shadow: 3px 3px 8px #000;
+	-o-box-shadow: 3px 3px 8px #000;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 5px 0 10px 0;
+	float: left;
+	overflow: auto;
+}
+
+.clearfix{
+	clear:both;
+}
+
+
+
+/*-----------This is the CSS for the image gallery page--------*/
+
+.ijimages{
+	border: 10px solid #beb44f;
+}
+
+.az{
+	border: 10px solid #beb44f;
+}
+
+
+/*-----------This is CSS for the Footer------------*/
+
+footer{
+	background-color: #fff;
+	color: #f0f
+	font-size: 10px;
+	line-height: 1.5;
+	margin-top:25px;
+	padding: 20px 0;
+	text-align: center;
+}
