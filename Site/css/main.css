@@ -1,20 +1,27 @@
 body{
 	background-color: #c14869;
-	font-family: 'trebuchet ms', Arial, sans-serif;
-	font-size: 14px;
-	line-height: 1.5;
+	font:.875em/1.5 'trebuchet ms', Arial, sans-serif;
 	width: 800px;
-	margin: 0 auto;
+	margin: 20px auto;
 	background-image:url('../images/bg_image.png');
 	background-repeat: repeat-x;
 }
 
 #header{
 	height: 100px;
-	width: 800px;
+	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border: 1px solid #000;
+}
+
+#main{
+	width:100%;
+	overflow:auto;
+}
+
+img{
+	max-width:100%;
 }
 
 h1, h2, h3{
@@ -31,49 +38,50 @@ a{
 	text-decoration: none;
 }
 
-a:link{
-	border-left: 1px solid #000;
-	border-right: 1px solid #000;
-}
-
 a:hover{
-	background-color: black;
 	border: none;
-	color: red;
+	color: #50153d;
 }
 
-/*-------------This is CSS for the Navigation-------------*/
+/*-------------Nav Elements-------------*/
+
+ul{
+	width:800px;
+	margin: 0 auto;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+}
 
 ul li{
 	display: inline;
-	width: 762px;
-}
-
-#nav{
-	display: inline;
-	font-size: 18px;
-	list-style: none outside none;
-	margin: 0;
-	padding: 0;
 }
 
 #nav li{
-	margin: 0;
-	padding: 0;
+	width:33%;
+	float: left;
+	text-align: center;
+	letter-spacing: .25em;
+	border: 1px solid #000;
+	text-transform: uppercase;
 }
 
-#nav li a{
-	display: inline;
-	padding: 0 40px 0 40px;
-	text-transform: lowercase;
+#nav li:hover{
+	background-color: #e1e1e1;
+	color: #50153d;
 }
 
-#nav li a:hover{
-	background-color: white;
-	color: #000;
+#nav a{
+	display:block;
+	height: 20px;
 }
 
-/*-----------This is CSS for the Main Content------------*/
+#nav a:hover{
+	color:#50153d;
+	background-color:#e1e1e1;
+}
+
+/*-----------Main content elements------------*/
 
 #main_content{
 	background-color: #eef3fd;
@@ -81,22 +89,23 @@ ul li{
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	padding: 5px;
-	margin: 5px 5px 10px 5px;
+	padding: 5px .625%;
+	margin: 5px .625% 10px .625%;
 	height:311px;
 	overflow: auto;
 }
 
 #info{
 	margin: 0;
-	width: 280px;
 	float: left;
 }
 
 .justice{
+	width:62.5%;
 	float:right;
 }
-/*-----------This is CSS for the Fun Facts & Table & Form-----------*/
+
+/*-----------fact&table&form elements-----------*/
 
 #fun_facts{
 	background-color: #eef3fd;
@@ -104,9 +113,9 @@ ul li{
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	width: 380px;
-	padding: 5px;
-	margin: 5px;
+	width: 47.375%; /*380*/
+	padding: 5px .65789474%;
+	margin: 5px .65789474%;
 	float: left;
 	overflow: auto;
 }
@@ -117,10 +126,10 @@ ul li{
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	width: 380px;
+	width: 47.375%;
 	height: 239px;
-	padding: 5px;
-	margin: 5px;
+	padding: 5px .65789474%;
+	margin: 5px .65789474%;
 	float: right;
 	overflow: auto;
 }
@@ -135,50 +144,55 @@ ul li{
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	width: 780px;
-	padding: 5px;
-	margin: 5px 5px 25px 5px;
+	width: 97.5%; /*780*/
+	padding: 5px .64102564%;
+	margin: 5px .64102564% 25px .64102564%;
 	overflow: auto;
 }
 
-/*----------This is the CSS for the Main info for the Tech Specs-------*/
+/*----------tech spec elements-------*/
 
 #tech_info{
 	float:right;
-	width: 424px;
-	font-size: 13px;
+	width: 53%; /*424*/
+	font-size: .875em;
 	background-color: #eef3fd;
 	-moz-box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 5px .58962264%;
 	margin-bottom: 10px;
 	overflow: auto;
 }
 
+.clearfix{
+	clear:both;
+}
+
 #characteristics{
-	font-size: 13px;
+	
+	font-size: .875em;
 	background-color: #eef3fd;
 	-moz-box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	padding: 5px;
-	margin: 5px 10px 10px 0;
+	padding: 5px .625%;
+	margin: 5px 1.25% 10px 0;
 	float: left;
 	overflow: auto;
 }
 
 #armaments{
-	font-size: 13px;
+	font-size: .875em;
 	background-color: #eef3fd;
 	-moz-box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	padding: 5px;
-	margin: 5px 10px 10px 0;
+	padding: 5px .625%;
+	margin: 5px 1.25% 10px 0;
 	float: left;
 	overflow: auto;
 }
@@ -191,15 +205,15 @@ ul li{
 }
 
 #tech_form{
-	font-size: 13px;
-	width:280px;
+	font-size: .875em;
+	width:35%; /*280*/
 	height:153px;
 	background-color: #eef3fd;
 	-moz-box-shadow: 3px 3px 8px #000;
 	-webkit-box-shadow: 3px 3px 8px #000;
 	-o-box-shadow: 3px 3px 8px #000;
 	border-radius: 10px;
-	padding: 5px;
+	padding: 5px 1.25%;
 	margin: 5px 0 10px 0;
 	float: left;
 	overflow: auto;
@@ -211,25 +225,86 @@ ul li{
 
 
 
-/*-----------This is the CSS for the image gallery page--------*/
+/*-----------gallery elements--------*/
 
 .ijimages{
 	border: 10px solid #beb44f;
+	margin: 0 2.5%;
 }
 
 .az{
 	border: 10px solid #beb44f;
+	margin: 0 2.5%;
 }
 
 
-/*-----------This is CSS for the Footer------------*/
+
+/*-----------footer elements------------*/
 
 footer{
-	background-color: #fff;
-	color: #f0f
-	font-size: 10px;
+	background-color: #eef3fd;
+	color: #000;
+	font-size: .8125em;
 	line-height: 1.5;
 	margin-top:25px;
 	padding: 20px 0;
 	text-align: center;
 }
+
+
+
+/*-------Media Queries---------------*/
+
+	/*tablet portrait size to standard 800 (Devices and browsers)*/
+	@media screen and (min-width: 768px) and (max-width: 799px){
+		
+		body{
+			margin: 10px;
+		}
+		
+		.ijimages{
+			border:7px solid #beb44f;
+			margin: 0;
+		}
+		
+		.az{
+			border: 5px solid #beb44f;
+			margin: 0;
+		}
+	}
+	
+	/*Mobile landscape size to tablet portrait (devices and browsers)*/
+	@media only screen and (min-width: 480px) and (max-width:767px){
+
+		ul{
+			width:600px;			
+		}
+		
+		.ijimages{
+			border: 2px solid #beb44f;
+			margin: 0;
+		}
+
+		.az{
+			border: 2px solid #beb44f;
+			margin: 0;
+		}
+		
+	}
+	
+	/*Mobile portrait size to mobile landscape size (devices and browsers)*/
+	@media only screen and (max-width:479px){
+	
+		body{
+			margin:10px;
+		}
+		
+		ul{
+			width:350px;
+		}
+		
+		img{
+			display:none;
+		}
+		
+	}
