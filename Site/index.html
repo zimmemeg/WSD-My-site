@@ -27,9 +27,9 @@
 		
 							<!--This is the Main Content-->
 	<div id='main'>						
-		<h2>ZGMF-X19A Infinite Justice</h2>
+		<h1>ZGMF-X19A Infinite Justice</h1>
 		
-		<img class='justice' title="Infinite Justice" alt="Image of Infinite Justice." src="images/ij.png">	
+		<div id="j1container"><img class='justice' title="Infinite Justice" alt="Image of Infinite Justice." src="images/ij.png"></div>	
 		<section id='main_content'>
 			<p id='info'>
 			The ZGMF-X19A Infinite Justice was developed by the Clyne Faction and was first deployed in C.E.74. It is very similar
@@ -50,13 +50,86 @@
 			</ol>	
 		</aside>
 		
-		<div id='table'> This is where the table is going to be.
+		
+		<div id='table'> 
+		<p>By joining our fan listing you will receive special benefits!</p>
+		
+		<table>
+			<tr>
+				<th>Member</th>
+				<th>Non-Member</th>
+			</tr>
+			<tr>
+				<td>Access to multiple galleries.</td>
+				<td>Six select images.</td>
+			</tr>
+			<tr class="odd">
+				<td>Access to message boards.</td>
+				<td>N/A</td>
+			</tr>
+			<tr>
+				<td>E-mail update for new content.</td>
+				<td>N/A</td>
+			</tr>
+			
+		</table>
 		</div>
 		
 		<div class='clearfix'></div>
+
 		
-		<div id='form'>This is where the form is going to be.
+		<div id='form'>
+		
+		<h2>Join our free fan listing!</h2>
+		
+		<form method="get" action="mailto:zimmemeg@fullsail.com">
+			
+			<fieldset>
+			<div>
+				<label for="name_first">First Name:</label>
+				<input type="text" name="name_first" id="name_first" size="30">
+			</div>
+			
+			<div>
+				<label for="name_last">Last Name:</label>
+				<input type="text" name="name_last" id="name_last" size="30">
+			</div>
+			
+			<div>
+				<label for="phone">Phone Number:</label>
+				<input type="text" name="phone" id="phone" size="30">
+			</div>
+			
+			<div>
+				<label for="email">Email Address:</label>
+				<input type="text" name="email" id="email" size="30">
+			</div>
+			</fieldset>
+			
+			<fieldset>
+			<div>
+				<label for="type">What brought you here?</label>
+				<select name="type" id="type">
+					<option>Email</option>
+					<option>Advertisement</option>
+					<option>Referred</option>
+					<option>Other</option>
+				</select>
+			</div>
+			
+			<div>
+				<label for="comments">Comments:</label>
+				<textarea rows="10" cols="30" name="comments" id="comments"></textarea>
+			</div>
+			
+			<div>
+				<button type="submit" name="submit" class="button">Send Application</button>
+			</div>
+			</fieldset>
+			</form>
 		</div>
+	
+		
 	</div>	
 							<!--This is the Footer-->
 		
